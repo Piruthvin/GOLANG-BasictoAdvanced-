@@ -1,0 +1,76 @@
+Initialize a Git Repository
+cd path\to\your\project
+git init #Creates a .git folder in your project directory.
+
+Check the Status
+
+git status
+
+Add Files to Staging Area
+
+git add filename.txt       # Add a specific file
+git add .                  # Add all changes in the current directory
+
+Commit Changes
+
+git commit -m "Initial commit"
+
+View Commit History
+
+git log 
+
+Add a Remote Repository
+
+git remote add origin https://github.com/username/repo.git
+
+Push to GitHub
+
+git push -u origin master   # For first push
+git push                    # After first time
+
+Clone an Existing Repository
+
+
+git clone https://github.com/username/repo.git
+
+Pull Latest Changes
+
+git pull
+
+Create and Switch to a Branch
+
+
+git branch new-feature         # Create branch
+git checkout new-feature       # Switch to branch
+# OR combine:
+git checkout -b new-feature
+
+Merge a Branch
+
+git checkout master
+git merge new-feature
+
+Delete a Branch
+
+git branch -d new-feature
+
+Remove a File
+
+git rm filename.txt
+git commit -m "Removed file"
+
+Undo Changes
+
+git checkout -- filename.txt     # Undo local changes
+git reset HEAD filename.txt      # Unstage a file
+git reset --hard HEAD            # Undo all local changes
+
+
+Example 
+
+cd C:\Users\Piruthvin\Documents\MyApp
+git init
+git add .
+git commit -m "First commit"
+git remote add origin https://github.com/piruthvin/myapp.git
+git push -u origin master
